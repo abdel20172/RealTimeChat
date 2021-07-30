@@ -8,7 +8,7 @@ const http = require("http").createServer(app);
 
 // On créer la route /
 app.get("/", (req, res) => {
-    res.send("Bonjour");
+    res.sendFile(__dirname + "/index.html");
 });
 
 
