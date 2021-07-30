@@ -79,8 +79,8 @@
 
             });
 
-            // On écoute l'évènement "chat_message"
-            socket.on("chat_message", msg => {
+            // On écoute l'évènement "received_message"
+            socket.on("received_message", msg => {
                 // console.log(msg);
                 document.querySelector("#messages").innerHTML += `<p>${msg.name} dit ${msg.message}</p>`;
             });
