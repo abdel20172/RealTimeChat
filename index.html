@@ -66,8 +66,12 @@
             document.querySelector("form").addEventListener("submit", e => {
                 // On empêche l'envoi du formulaire
                 e.preventDefault();
-                const name = document.querySelector("#mane");
+                const name = document.querySelector("#name");
                 const message = document.querySelector("#message");
+
+                // On envoie le message et on passe l'information sous form d'objet
+                socket.emit("chat_message", { name: name.value, 
+                    message: message.value} );
 
 
             });

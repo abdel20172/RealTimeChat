@@ -24,7 +24,9 @@ io.on("connection", socket => {
 
     // On gère le chat
     socket.on("chat_message", msg => {
-        
+        // console.log(msg);
+        // On relaie le message vers tous les utilisateurs connectés
+        io.emit("chat_message", msg);
     });
 });
 
