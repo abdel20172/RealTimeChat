@@ -62,7 +62,8 @@
             document.querySelector("form").addEventListener("submit", e => {
                 // On empêche l'envoi du formulaire
                 e.preventDefault();
-                console.log("Formulaire envoyé");
+                const name = document.querySelector("#mane");
+                const message = document.querySelector("#message");
 
 
             });

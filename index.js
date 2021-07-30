@@ -6,6 +6,10 @@ const app = require("express")();
 // On créer le serveur http
 const http = require("http").createServer(app);
 
+// On instancie socket.io il prend http comme paramètre de démarrage
+const io = require("socket.io")(http);
+
+
 // On créer la route /
 app.get("/", (req, res) => {
     res.sendFile(__dirname + "/index.html");
