@@ -6,8 +6,10 @@ const app = require("express")();
 // On créer le serveur http
 const http = require("http").createServer(app);
 
-
-
+// On créer la route /
+app.get("/", (req, res) => {
+    res.send("Bonjour");
+});
 
 
 
