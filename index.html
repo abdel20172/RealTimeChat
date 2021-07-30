@@ -60,7 +60,11 @@
         window.onload =  () => {
             // On écoute l'évènement submit dès qu'on valide le formulaire
             document.querySelector("form").addEventListener("submit", e => {
+                // On empêche l'envoi du formulaire
                 e.preventDefault();
+                console.log("Formulaire envoyé");
+
+
             });
         };
 
