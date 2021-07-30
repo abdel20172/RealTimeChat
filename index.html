@@ -5,6 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chat Socket.io</title>
+    <style>
+        #messages{
+            border: 1px solid black;
+            height: 90vh;
+        }
+
+        #messages p{
+            margin: 0;
+            padding: 10px;
+        }
+
+        #messages :nth-child(odd){
+            background-color: #aaa;
+        }
+
+        form{
+            display: flex
+        }
+
+        :is(#name, button){
+            flex: 1;
+            padding: 10px;
+        }
+
+        #message{
+            flex: 5;
+            padding: 10px;
+        }
+        button{
+            border: none;
+            background-color: #839c49;
+            color: white;
+        }
+
+
+
+
+
+
+    </style>
 </head>
 <body>
     <div id="messages"></div>
