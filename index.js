@@ -20,6 +20,7 @@ io.on("connection", socket => {
     console.log("Une connection s'active");
 
     // On écoute les diconnections
+    socket.on("decconction", () => console.log("Un utilisateur s'est déconnecté"));
 });
 
 
