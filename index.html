@@ -59,6 +59,9 @@
 
         window.onload =  () => {
             // On écoute l'évènement submit dès qu'on valide le formulaire
+            document.querySelector("form").addEventListener("submit", e => {
+                e.preventDefault();
+            });
         };
 
 
