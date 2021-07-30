@@ -17,7 +17,9 @@ app.get("/", (req, res) => {
 
 // On écoute l'évènement "connection" de socket.io
 io.on("connection", socket => {
-    console.log(socket);
+    console.log("Une connection s'active");
+
+    // On écoute les diconnections
 });
 
 

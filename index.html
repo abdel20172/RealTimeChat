@@ -59,6 +59,7 @@
     <script src="/socket.io/socket.io.js"></script>
     <script>
 
+        const socket = io();
         window.onload =  () => {
             // On écoute l'évènement submit dès qu'on valide le formulaire
             document.querySelector("form").addEventListener("submit", e => {
