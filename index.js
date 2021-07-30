@@ -15,9 +15,10 @@ app.get("/", (req, res) => {
     res.sendFile(__dirname + "/index.html");
 });
 
-
-
-
+// On écoute l'évènement "connection" de socket.io
+io.on("connection", socket => {
+    console.log(socket);
+});
 
 
 // On ve demander au serveur http de répondre sur le port 3000
