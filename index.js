@@ -14,5 +14,8 @@ const http = require("http").createServer(app);
 
 
 
+// On ve demander au serveur http de répondre sur le port 3000
+const PORT = 3000;
 
+http.listen(PORT, () => console.log(`j'écoute le port ${PORT || process.env.PORT}`));
 
